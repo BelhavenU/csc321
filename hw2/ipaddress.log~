@@ -1,0 +1,7 @@
+# IPython log file
+
+%logstart -ot ipaddress.log
+# Thu, 02 Mar 2023 18:30:34
+get_ipython().run_line_magic('ls', '')
+# Thu, 02 Mar 2023 18:30:46
+exit()
