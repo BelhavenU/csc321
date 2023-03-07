@@ -4,7 +4,7 @@ import ipaddress
 
 interface = netifaces.interfaces()
 
-# pull IP configuration with 'ipconfig'in terminal 
+# pull IP configuration with 'ipconfig -a'in terminal 
 # pull interfaces on personal computer 
 
 def get_interfaces():
