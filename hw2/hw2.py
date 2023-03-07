@@ -120,3 +120,48 @@ def get_netmask(interface):
     return netmask_dict
 
 '''IPv4:255.255.255.0 and IPv6:255.255.255.0 '''
+
+def get_network(interface):
+    network = {}
+    addrs = netifaces.ifaddresses(interface)
+    try:
+
+        addrs = netifaces.ifaddresses(interface)
+        #print(mkeys[interface][0]['addr'])
+        ipv4 = addrs[netifaces.AF_INET]
+        ipv4i = ipv4[0]['netmask']
+        #print(ipv4i)
+        network['v4'] = ipv4i
+        # print(addrs[netiface.AF_INET6[0]['addr']])
+    except:
+        print()
+
+    try: 
+        addrs = netifaces.ifaddresses(interface)
+        #print(mkeys[interface][0]['addr'])
+        ipv6 = addrs[netifaces.AF_INET6]
+        ipv6i = ipv6[0]['broadcast']
+        network['v6'] = ipv6i
+        # print(addrs[netiface.AF_INET6[0]['addr']])
+    except:
+        print() 
+
+    print(network)
+
+
+
+print(get_interfaces())
+
+work = input("which would you like to view ")
+
+get_mac(work)
+
+get_ips(work)
+
+get_netmask(work)
+
+get_network(work)
+
+
+#completed rough draft product 
+
