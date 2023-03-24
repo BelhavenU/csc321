@@ -1,0 +1,29 @@
+# Before 
+
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+
+# During
+Recv-Q Send-Q Local Address           Foreign Address   State
+Active Internet connections (w/o servers)
+Proto Recv-Q-Local Address    Local Address             Foreign Address             State
+tcp                          node01:48844                hw3-node00-1.hw3_n:5555     ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     40938
+unix  3      [ ]         STREAM     CONNECTED     40939
+unix  3      [ ]         STREAM     CONNECTED     40934
+unix  3      [ ]         STREAM     CONNECTED     40933
+unix  3      [ ]         STREAM     CONNECTED     40937
+unix  3      [ ]         STREAM     CONNECTED     40935
+unix  3      [ ]         STREAM     CONNECTED     40940
+unix  3      [ ]         STREAM     CONNECTED     40936
+
+# After
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address             State    
+tcp   0       0     node01:48842            hw3-node00-1.hw3_n:5555     TIME_WAIT
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
