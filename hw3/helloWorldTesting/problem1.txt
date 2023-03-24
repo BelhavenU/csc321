@@ -1,0 +1,41 @@
+#Donovan Givens problem 1 files
+
+#Before shot 
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State   
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     69850
+unix  3      [ ]         STREAM     CONNECTED     69849
+unix  3      [ ]         STREAM     CONNECTED     69853
+unix  3      [ ]         STREAM     CONNECTED     69855
+unix  3      [ ]         STREAM     CONNECTED     69852
+unix  3      [ ]         STREAM     CONNECTED     69856
+unix  3      [ ]         STREAM     CONNECTED     69851
+unix  3      [ ]         STREAM     CONNECTED     69854
+
+
+#During Shot
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+
+tcp        0      0 node00:5555             hw3-node01-1.hw3_:51376 ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     69850
+unix  3      [ ]         STREAM     CONNECTED     69849
+unix  3      [ ]         STREAM     CONNECTED     69853
+unix  3      [ ]         STREAM     CONNECTED     69855
+unix  3      [ ]         STREAM     CONNECTED     69852
+unix  3      [ ]         STREAM     CONNECTED     69856
+unix  3      [ ]         STREAM     CONNECTED     69851
+unix  3      [ ]         STREAM     CONNECTED     69854
+
+
+#After shot
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 node01:59170            hw3-node00-1.hw3_n:5555 TIME_WAIT
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+
