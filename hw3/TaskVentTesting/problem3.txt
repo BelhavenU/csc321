@@ -1,0 +1,44 @@
+#Donovan Givens
+#Problem 3
+
+#Before shot
+root@node02:/lab# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State   
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+
+#During shot
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+
+tcp        0      0 node00:5558             hw3-node01-1.hw3_:56852 ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     206728
+unix  3      [ ]         STREAM     CONNECTED     117726
+unix  3      [ ]         STREAM     CONNECTED     206731
+unix  3      [ ]         STREAM     CONNECTED     206727
+unix  3      [ ]         STREAM     CONNECTED     206730
+unix  3      [ ]         STREAM     CONNECTED     117723
+unix  3      [ ]         STREAM     CONNECTED     117722
+unix  3      [ ]         STREAM     CONNECTED     117727
+unix  3      [ ]         STREAM     CONNECTED     206726
+unix  3      [ ]         STREAM     CONNECTED     117725
+unix  3      [ ]         STREAM     CONNECTED     117728
+unix  3      [ ]         STREAM     CONNECTED     206725
+unix  3      [ ]         STREAM     CONNECTED     117724
+unix  3      [ ]         STREAM     CONNECTED     117729
+unix  3      [ ]         STREAM     CONNECTED     206729
+unix  3      [ ]         STREAM     CONNECTED     206724
+
+
+#After Shot
+root@node02:/lab# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+
+tcp        0      0 node02:40010            hw3-node00-1.hw3_n:5558 TIME_WAIT
+tcp        0      0 node02:5557             hw3-node01-1.hw3_:54010 TIME_WAIT
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
