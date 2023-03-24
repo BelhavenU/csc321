@@ -1,0 +1,28 @@
+#Before
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+
+Active UNIX domain sockets (w/o servers)
+
+#During
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+
+tcp        0      0 node01:60390            hw3-node00-1.hw:freeciv ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         STREAM     CONNECTED     118211
+unix  3      [ ]         STREAM     CONNECTED     118204
+unix  3      [ ]         STREAM     CONNECTED     118207
+unix  3      [ ]         STREAM     CONNECTED     118206
+unix  3      [ ]         STREAM     CONNECTED     118205
+unix  3      [ ]         STREAM     CONNECTED     118210
+unix  3      [ ]         STREAM     CONNECTED     118209
+unix  3      [ ]         STREAM     CONNECTED     118208
+
+#After
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 node01:60388            hw3-node00-1.hw:freeciv TIME_WAIT
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
